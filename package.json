@@ -9,6 +9,8 @@
     "axios": "^0.21.0",
     "history": "^5.0.0",
     "lodash": "^4.17.20",
+    "prismic-cli": "^3.7.11",
+    "prismic-javascript": "^3.0.2",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import teams from './teams'
+import content from './content'
+import lang from './lang'
 
 const rootReducer = combineReducers({
-    teams
+    content,
+    lang
 })
 
 export default rootReducer

@@ -1,8 +1,7 @@
 import { createStructuredSelector } from "reselect";
 import * as _ from 'lodash'
-import { selectTeams } from "../../store/selectors/teams";
-
+import { selectContent } from "../../store/selectors/content";
 
 export default createStructuredSelector({
-    teams: selectTeams
+    content: selectContent
 })

@@ -6,11 +6,10 @@ import * as _ from 'lodash'
 
 const Dashboard = props => {
     useEffect(() => {
-        if(!_.isNil(props.teams))
-            props.onInit()
+        props.onInit()
     }, [])
 
-    console.log(props.teams)
+    console.log(props.content)
     return(
         <div>
             <h1>This is a dashboard!</h1>

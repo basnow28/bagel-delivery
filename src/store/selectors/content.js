@@ -1,0 +1,1 @@
+export const selectContent = state => state.content;

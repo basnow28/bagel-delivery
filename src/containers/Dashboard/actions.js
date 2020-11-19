@@ -1,7 +1,7 @@
-import { TEAMS } from "../../store/actions/action";
+import { CONTENT } from "../../store/actions/action";
 
 export const onInit = () => {
     return {
-        type: TEAMS.INIT
+        type: CONTENT.INIT
     }
 }
