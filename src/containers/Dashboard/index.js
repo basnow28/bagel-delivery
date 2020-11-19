@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import selectors from './selectors'
 import * as actions from './actions'
 import * as _ from 'lodash'
+import { RichText } from 'prismic-reactjs'
 
 const Dashboard = props => {
     useEffect(() => {
