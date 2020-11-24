@@ -49,18 +49,18 @@ React Router (https://reactrouter.com/)
 
 
 ## File Structure
-src folder: 
-api/ - Functions that call api endpoints
-containers/ - components used in the routes
-components/ - components used by containerss
-routes/ - React Router setup
-store/ - React Redux and Saga setup: 
-     actions/ - React Redux actions
-     reducers/ - React Redux reducers, add a reducer to index.js to create an object in the store
-     sagas/ - React Redux sagas, they contain business logic and call api functions
-     selectors/ - functions used to select data from Redux store
-styles/ - global styles
-tests/ - react tests, using jest (See more: https://jestjs.io/docs/en/tutorial-react) 
+     src folder: 
+          api/ - Functions that call api endpoints
+          containers/ - components used in the routes
+          components/ - components used by containers
+          routes/ - React Router setup
+          store/ - React Redux and Saga setup: 
+               actions/ - React Redux actions
+               reducers/ - React Redux reducers, add a reducer to index.js to create an object in the store
+               sagas/ - React Redux sagas, they contain business logic and call api functions
+               selectors/ - functions used to select data from Redux store
+          styles/ - global styles
+          tests/ - react tests, using jest (See more: https://jestjs.io/docs/en/tutorial-react) 
 
 ## Learn More
 
