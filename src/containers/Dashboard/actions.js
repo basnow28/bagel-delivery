@@ -1,7 +1,7 @@
-import { CONTENT } from "../../store/actions/action";
+import { CONTENT,IMAGES } from "../../store/actions/action";
 
 export const onInit = () => {
     return {
-        type: CONTENT.INIT
+        type: IMAGES.INIT
     }
 }

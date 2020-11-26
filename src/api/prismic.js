@@ -12,3 +12,8 @@ export const prismicFetch = (predicates, options) => {
         })
     })
 }
+
+
+export const fetchImages = options => {
+    return prismicFetch([Prismic.Predicates.at('document.tags', ['images'])], options)
+}
