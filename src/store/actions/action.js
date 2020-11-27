@@ -1,6 +1,6 @@
-export const CONTENT = {
-    INIT: 'CONTENT.INIT',
-    FETCH: 'CONTENT.FETCH'
+export const LOCALE = {
+    INIT: 'LOCALE.INIT',
+    FETCH: 'LOCALE.FETCH'
 }
 
 export const LANGUAGE = {

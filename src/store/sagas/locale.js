@@ -1,15 +1,15 @@
 import { call, select, takeLatest } from 'redux-saga/effects'
 import request from './helpers/request'
-import { CONTENT } from '../actions/action'
-import { prismicFetch } from '../../api/prismic'
+import { LOCALE } from '../actions/action'
+import { fetchLocaleText, prismicFetch } from '../../api/prismic'
 import { selectLanguage } from '../selectors/lang'
 
 
 function* init(action){
     const lang = yield select(selectLanguage)
-    yield call(request, {type: CONTENT.FETCH, rootAction: action}, () => prismicFetch('', lang))
+    yield call(request, {type: LOCALE.FETCH, rootAction: action}, () => fetchLocaleText(lang))
 }
 
 export default function*(){
-    yield takeLatest(CONTENT.INIT, init)
+    yield takeLatest(LOCALE.INIT, init)
 }

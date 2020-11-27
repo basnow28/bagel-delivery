@@ -1,9 +1,9 @@
 import { all, call } from 'redux-saga/effects'
-import content from './content'
+import locale from './locale'
 import images from './images'
 
 const allSagas = [
-    content(),
+    locale(),
     images()
 ]
 

@@ -15,5 +15,9 @@ export const prismicFetch = (predicates, options) => {
 
 
 export const fetchImages = options => {
-    return prismicFetch([Prismic.Predicates.at('document.tags', ['images'])], options)
+    return prismicFetch([Prismic.Predicates.at('document.type', 'images')], options)
+}
+
+export const fetchLocaleText = options => {
+    return prismicFetch([Prismic.Predicates.at('document.type', 'locale')], options)
 }

@@ -1,8 +1,8 @@
 import { createStructuredSelector } from "reselect";
 import * as _ from 'lodash'
-import { selectContent } from "../../store/selectors/content";
-import { selectImages } from "../../store/selectors/images";
+import { selectLocale, selectLocaleByKey, selectLocaleText } from "../../store/selectors/locale";
+import { selectImageByKey, selectImages } from "../../store/selectors/images";
 
 export default createStructuredSelector({
-    content: selectImages
+    content: selectLocaleText('Discover Page', 'some_other_key')
 })
