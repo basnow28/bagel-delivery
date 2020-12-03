@@ -1,0 +1,16 @@
+.NavButton {
+    display: inline;
+    position: relative;
+    float: right;
+    border:none;
+    height: 4em;
+    width: fit-content;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-size: 1em;
+    background-color: #FFFFFF;
+    padding-right: 1em;
+    padding-left: 1em;
+    color: #303131;
+
+}
