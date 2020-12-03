@@ -6,4 +6,11 @@ export default createGlobalStyle`
     h1 {
         color: blue
     }
+    ul {
+        list-style-type: none;
+    }
+
+    section{
+        padding: 4em 0;
+    }
 `;
