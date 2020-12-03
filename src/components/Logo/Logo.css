@@ -1,0 +1,16 @@
+.Logo{
+    display: inline;
+    position: absolute;
+    font-family: 'Work Sans';
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+    height: 4em;
+    font-size: 2em;
+    line-height: 2em;
+    justify-content: center;
+    /* Font black */
+    height: inherit;
+    color: #303131;
+}
