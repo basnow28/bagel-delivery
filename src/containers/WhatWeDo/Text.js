@@ -1,5 +1,5 @@
 import React from 'react';
-import 'C:/Users/Dagmara/Desktop/Sem3/SoftwareDev2/final project/bagel-delivery/src/App.css';
+import './../../App.css';
 
 
 class Text extends React.Component{
