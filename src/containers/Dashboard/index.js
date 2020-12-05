@@ -5,6 +5,13 @@ import * as actions from './actions'
 import * as _ from 'lodash'
 import { RichText } from 'prismic-reactjs'
 
+
+import Footer from 'C:/Users/Dagmara/Desktop/Sem3/SoftwareDev2/final project/bagel-delivery/src/containers/Footer/Footer.js';
+import Text from 'C:/Users/Dagmara/Desktop/Sem3/SoftwareDev2/final project/bagel-delivery/src/containers/WhatWeDo/Text.js'
+import Carousel from 'C:/Users/Dagmara/Desktop/Sem3/SoftwareDev2/final project/bagel-delivery/src/containers//WhatWeDo/ImageCarousel/DemoCarousel.js';
+import Slider from 'C:/Users/Dagmara/Desktop/Sem3/SoftwareDev2/final project/bagel-delivery/src/containers/WhatWeDo/ImageCarousel/slide.js'
+
+
 const Dashboard = props => {
     useEffect(() => {
         props.onInit()
@@ -13,8 +20,21 @@ const Dashboard = props => {
     console.log(props.content)
     return(
         <div>
-            <h1>This is a dashboard!</h1>
+                <Text header='What we do' textBody=
+                'København er en lille storby, og selvom vi er mere end en million indbyggere, så er afstanden fra
+                yderpunkterne mindre end 10 kilometer. Dét, kombineret med byens fantastiske infrastruktur, gør 
+                cyklen til det mest oplagte transportmiddel – også når det kommer til levering af mindre varer.'
+                textBody2='
+                Onward Delivery er skabt ud fra drømmen om, at det skal være lettere for caféer og restauranter, 
+                der dagligt har brug for friske specialvarer, at vælge bæredygtig levering. Siden vi cyklede vores 
+                første rute, er det blevet til godt 41.000 km i alt – det svarer til en tur rundt om jorden. Og lidt til.' />
+            
+                <Carousel />   
+                <Footer logo='onward delivery' contact={{ number : '+45 5022 2266', email : 'hello@onward.dk'}} 
+                social = {[{name: 'Instagram', link : ''}, {name : 'Facebook', link : ''} ]} />
+
         </div>
+        
     )
 }
 

@@ -5,6 +5,9 @@ import GlobalStyles from './styles/global'
 import { Provider } from 'react-redux'
 import { store } from './store'
 
+import Text from './containers/WhatWeDo/Text.js'
+
+
 
 function App() {
   return (
