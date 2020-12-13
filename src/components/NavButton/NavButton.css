@@ -9,8 +9,12 @@
     font-style: normal;
     font-size: 1em;
     background-color: #FFFFFF;
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
     color: #303131;
+}
 
+.Language{
+    padding-left: 0.25em; 
+    padding-right: 0.25em; 
 }

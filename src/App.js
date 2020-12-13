@@ -13,7 +13,6 @@ function App() {
     <Provider store={store}>
       <Router history={history}>
         <Routes />
-
         <Dashboard/>
         <GlobalStyles />
       </Router>

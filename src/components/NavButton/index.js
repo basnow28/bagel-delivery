@@ -1,8 +1,10 @@
 import './NavButton.css';
 
-const NavButton = ({name}) => {
+const NavButton = ({name, className, onClick}) => {
+
+
     return(
-        <button className = "NavButton">
+        <button className = {className?("NavButton " + className):"NavButton"} onClick={onClick}>
             {name}
         </button>
     )
