@@ -7,10 +7,10 @@ const TextInput = props => {
             <label className='input-label'>{props.label}</label>
             {props.icon ? 
             <div className='input-icon'>
-                <input className='input' type="text" {...props} />
+                <input className='text-input-item' type="text" {...props} />
                 {props.icon}
             </div> :
-                <input className='input' type="text" {...props} />
+                <input className='text-input-item' type="text" {...props} />
             }
         </div>
     )

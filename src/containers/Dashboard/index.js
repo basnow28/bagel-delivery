@@ -8,7 +8,7 @@ import Footprint from '../Footprint'
 import './dashboard.css'
 import Navbar from '../Navbar'
 import DummyComponent from '../../components/DummyComponent'
-import './Dashboard.css';
+import ContactForm from '../../components/ContactForm'
 
 const Dashboard = props => {
     useEffect(() => {
@@ -17,14 +17,12 @@ const Dashboard = props => {
 
     console.log(props.content)
     return(
-        <div className="Dashboard">
+        <div className="dashboard-container">
             <h1>This is a dashboard!</h1>
-            <Footprint />
             <DummyComponent name = "What we do"></DummyComponent>
             <DummyComponent name = "Who we work with"></DummyComponent>
-            <DummyComponent name = "1"></DummyComponent>
-            <DummyComponent name = "2"></DummyComponent>
-            <DummyComponent name = "3"></DummyComponent>
+            <Footprint />
+            <ContactForm name = "Contact"></ContactForm>
         </div>
     )
 }
