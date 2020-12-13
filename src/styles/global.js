@@ -3,14 +3,12 @@ import { createGlobalStyle } from 'styled-components'
 
 //Global css styling
 export default createGlobalStyle`
-    h1 {
-        color: blue
-    }
     ul {
         list-style-type: none;
     }
 
     section{
-        padding: 4em 0;
+        padding-left: 4em;
+        padding-right: 4em;
     }
 `;
