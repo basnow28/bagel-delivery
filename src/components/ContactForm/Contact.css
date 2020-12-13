@@ -1,5 +1,5 @@
 .Contact{
-    display: inline-block;
+    display: block;
     font-family: 'Work Sans';
     font-style: normal;
     text-align: left;
@@ -50,18 +50,25 @@ input[type="submit"]{
     height: 200%;
     line-height: 3em;
     text-align: center;
+    transition:none;
 }
 
-input{
+input, textarea, select{
     padding-left: 1%;
     width: 99%;
     border: none;
     height: 2em;
+    font-size: 1em;
     border-bottom: 1px solid #E9E9E9;
     padding-right: 1%;
     margin-bottom: 5%;
     margin-top: 5%;
+    box-sizing: unset;
     transition: ease-in-out, border-bottom .35s ease-in-out;
+}
+
+select{
+    padding: 1px 2px;
 }
 
 .Input-Left{
@@ -75,9 +82,20 @@ input{
 }
 
 .Message{
-    
+    height: 5em;
+    line-height: 1.3em;
+    font-size: 1.5em;
 }
 
+.Frequency{
+    border: 1px solid #E9E9E9;
+    margin: 1em 0em;
+    height: 2em;
+}
+
+option{
+    font-size: 1em;
+}
 
 input:focus{
     outline: none;
@@ -87,4 +105,12 @@ input:focus{
 input:hover{
     border: none;
     border-bottom: 1px solid #303131;
+}
+
+input[type="submit"]:hover{
+    border: 1px solid #E9E9E9;
+}
+
+input[type="submit"]:focus{
+    outline: none;
 }

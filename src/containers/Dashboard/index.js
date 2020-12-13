@@ -7,6 +7,7 @@ import { RichText } from 'prismic-reactjs'
 import Navbar from '../Navbar'
 import DummyComponent from '../../components/DummyComponent'
 import './Dashboard.css';
+import ContactForm from '../../components/ContactForm'
 
 const Dashboard = props => {
     useEffect(() => {
@@ -19,7 +20,7 @@ const Dashboard = props => {
             <h1>This is a dashboard!</h1>
             <DummyComponent name = "What we do"></DummyComponent>
             <DummyComponent name = "Who we work with"></DummyComponent>
-            <DummyComponent name = "Contact"></DummyComponent>
+            <ContactForm name = "Contact"></ContactForm>
         </div>
     )
 }
