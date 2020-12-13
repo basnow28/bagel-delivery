@@ -5,3 +5,9 @@ export const onInit = () => {
         type: LOCALE.INIT
     }
 }
+
+export const loadImages = () => {
+    return {
+        type: IMAGES.INIT
+    }
+}

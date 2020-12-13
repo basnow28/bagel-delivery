@@ -4,16 +4,18 @@ import selectors from './selectors'
 import * as actions from './actions'
 import * as _ from 'lodash'
 import { RichText } from 'prismic-reactjs'
+import Footprint from '../Footprint'
+import './dashboard.css'
 
 const Dashboard = props => {
     useEffect(() => {
-        props.onInit()
+        props.onInit() && props.loadImages()
     }, [])
 
     console.log(props.content)
     return(
-        <div>
-            <h1>This is a dashboard!</h1>
+        <div className='dashboard-container'>
+            <Footprint />
         </div>
     )
 }
