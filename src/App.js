@@ -5,8 +5,6 @@ import GlobalStyles from './styles/global'
 import { Provider } from 'react-redux'
 import { store } from './store'
 import Dashboard from './containers/Dashboard'
-import Navbar from './containers/Navbar'
-
 
 function App() {
   return (

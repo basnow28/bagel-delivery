@@ -1,0 +1,141 @@
+/*header*/
+.textHeader{
+    position: absolute;
+    width: 293px;
+    height: 59px;
+    left: 574px;
+    top: 1156px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 59px;
+
+    /* identical to box height */
+    text-align: center;
+
+    /* Font black */
+    color: #303131;
+}
+
+.textBody {
+    position: absolute;
+    width: 821px;
+    height: 183px;
+    left: 310px;
+    top: 1241px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+
+    /* or 27px */
+    text-align: center;
+
+    color: #000000;
+    
+}
+
+/* carousel*/
+
+.noMarginAndPadding{
+    margin : 0px;
+    padding: 0px;
+}
+
+.carouselImage{
+    position: absolute;
+    width: 1440px;
+    height: 606px;
+    top: 1450px;
+}
+
+.carousel.carousel-slider {
+    height: 606px;
+}
+
+.inactive {
+    display: none;
+  }
+.active {
+    display: block;
+  }
+
+  /*Footer*/
+footer {
+    position: absolute;
+    width: 100%; /* 1441px; */
+    height: 261px;;
+    left: -1px;
+    top: 5164px;
+    background: #303131;
+}
+
+.logoFooter {
+    position: absolute;
+    width: 244px;
+    height: 35px;
+    left: 69px;
+    top: 80px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.logoFooter a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.contactFooter a {
+    text-decoration: none;
+    color: #C4C4C4;
+}
+
+.socialFooter a {
+    text-decoration: none;
+    color: #C4C4C4;
+}
+
+.contactFooter{
+    position: absolute;
+    width: 113px;
+    height: 84px;
+    left: 897px;
+    top: 78px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 200%;
+
+    /* or 28px */
+
+    color: #C4C4C4;
+}
+
+.socialFooter {
+    position: absolute;
+    width: 66px;
+    height: 84px;
+    left: 1259px;
+    top: 78px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 200%;
+
+    /* or 28px */
+
+    color: #C4C4C4;
+}
