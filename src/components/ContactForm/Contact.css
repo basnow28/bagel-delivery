@@ -1,0 +1,90 @@
+.Contact{
+    display: inline-block;
+    font-family: 'Work Sans';
+    font-style: normal;
+    text-align: left;
+    width: 100%;
+    line-height: 2em;
+    /* Font black */
+    height: auto;
+    color: #303131;
+}
+
+.Contact div{
+    display: inline;
+    position: relative;
+    width: 45%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.Left{
+    float: left;
+    font-weight: 600;
+}
+
+.Left h1{
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.Left p{
+    font-weight: 300;
+    line-height: 1.3em;
+}
+
+.Right{
+    float: right;
+}
+
+label{
+    padding-left: 1%;
+    width: 49%;
+}
+
+input[type="submit"]{
+    display: block;
+    background: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    height: 200%;
+    line-height: 3em;
+    text-align: center;
+}
+
+input{
+    padding-left: 1%;
+    width: 99%;
+    border: none;
+    height: 2em;
+    border-bottom: 1px solid #E9E9E9;
+    padding-right: 1%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    transition: ease-in-out, border-bottom .35s ease-in-out;
+}
+
+.Input-Left{
+    width: 49%;
+    float: left;
+}
+
+.Input-Right{
+    width: 49%;
+    float: right;
+}
+
+.Message{
+    
+}
+
+
+input:focus{
+    outline: none;
+    border-bottom: 1px solid #303131;
+}
+
+input:hover{
+    border: none;
+    border-bottom: 1px solid #303131;
+}
