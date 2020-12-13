@@ -1,0 +1,21 @@
+.dropdown {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-placeholder {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.dropdown-menu {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+}

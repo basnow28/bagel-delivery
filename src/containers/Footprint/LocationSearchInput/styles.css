@@ -1,0 +1,15 @@
+.suggestion-item {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.suggestion-item--active {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+}

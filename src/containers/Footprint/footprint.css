@@ -101,6 +101,7 @@
     font-size: 18px;
     line-height: 150%;
     cursor: pointer;
+    height: 50px;
 }
 
 .calculate-button:active{

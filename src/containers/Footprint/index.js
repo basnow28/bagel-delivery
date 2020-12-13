@@ -64,24 +64,25 @@ class Footprint extends Component {
                     <LocationSearchInput
                         handleChange={this.setPickUpAddress}
                         address={this.state.pickup_address}
-                        style={{ marginBottom: '20px' }}
+                        style={{ marginBottom: '15px' }}
                         placeholder={tags.pickupPlaceholder}
                         label={tags.pickupTitle}
                         setLatLng={this.setPickUpAddressLatLng} />
                     <LocationSearchInput
                         handleChange={this.setDropOffAddress}
                         address={this.state.dropoff_address}
-                        style={{ marginTop: '20px' }}
+                        style={{ marginBottom: '15px' }}
                         placeholder={tags.pickupPlaceholder}
                         label={tags.dropOffTitle}
                         setLatLng={this.setDropOffAddressLatLng} />
-                    <label style={{ marginTop: '20px' }}>{tags.howOften}</label>
+                    <label style={{ marginBottom: '10px' }}>{tags.howOften}</label>
                     <HowOftenDropdown
                         onChange={this.setHowOften}
                     />
                     <button
                         className='calculate-button'
                         onClick={this.calculateDistance}
+                        style={{marginTop:'30px'}}
                     >
                         {tags.calculate}
                     </button>

@@ -3,7 +3,7 @@ import './input.css'
 
 const TextInput = props => {
     return (
-        <div className='text-input'>
+        <div className='text-input' style={props.style}>
             <label className='input-label'>{props.label}</label>
             {props.icon ? 
             <div className='input-icon'>

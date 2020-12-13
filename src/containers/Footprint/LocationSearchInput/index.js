@@ -4,6 +4,7 @@ import PlacesAutocomplete, {
     getLatLng
 } from 'react-places-autocomplete'
 import TextInput from '../../../components/TextInput'
+import './styles.css'
 
 class LocationSearchInput extends Component {
 
@@ -15,38 +16,33 @@ class LocationSearchInput extends Component {
     };
 
     render() {
-        const { placeholder, label } = this.props;
+        const { placeholder, label, style } = this.props;
 
         return (
             <PlacesAutocomplete
                 value={this.props.address}
                 onChange={this.props.handleChange}
                 onSelect={this.handleSelect}
-                style={this.props.style}
+                style={{...style}}
             >
                 {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
                     <div>
                         <TextInput {...getInputProps({
                             placeholder: placeholder
-                        })} label={label} />
+                        })} label={label} style={style}/>
                     <div className="autocomplete-dropdown-container">
                     {loading && <div>Loading...</div>}
                     {suggestions.map(suggestion => {
                       const className = suggestion.active
                         ? 'suggestion-item--active'
                         : 'suggestion-item';
-                      // inline style for demonstration purpose
-                      const style = suggestion.active
-                        ? { backgroundColor: '#fafafa', cursor: 'pointer' }
-                        : { backgroundColor: '#ffffff', cursor: 'pointer' };
                       return (
                         <div
                           {...getSuggestionItemProps(suggestion, {
-                            className,
-                            style,
+                            className
                           })}
                         >
-                          <span>{suggestion.description}</span>
+                          {suggestion.description}
                         </div>
                       );
                     })}

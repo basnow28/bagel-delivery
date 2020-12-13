@@ -4,6 +4,7 @@ import 'react-dropdown/style.css'
 import { connect } from 'react-redux'
 import selectors from './selectors'
 import * as _ from 'lodash'
+import './styles.css'
 
 class HowOftenDropdown extends Component {
     state = {
@@ -18,6 +19,9 @@ class HowOftenDropdown extends Component {
                 options={options}
                 onChange={this.props.onChange}
                 value={_.get(options, '0')}
+                controlClassName='dropdown'
+                placeholderClassName='dropdown-placeholder'
+                menuClassName='dropdown-menu'
             />
         )
     }
