@@ -1,0 +1,68 @@
+.Navbar{
+    overflow: hidden;
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    top: 0; 
+    left:0;
+    /* Onward background */
+    background-color: #FFFFFF;
+    /* Line (faded) */
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.Line {
+    position: relative;
+    display: inline;
+    width: 3em;
+    height: 0px;
+    float: right;
+    top: 1.5em;
+    /* Line (faded) */
+
+    border: 1px solid #E9E9E9;
+    transform: rotate(90deg);
+}
+
+.Half {
+    width: 1.5em;
+    top: 1.5em;
+}
+
+.MenuList{
+    display: inline;
+    float:right;
+
+    height: inherit;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0
+}
+
+.Language{
+    padding-left: 0.25em; 
+    padding-right: 0.25em; 
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.vl {
+    border-left: 0.1em solid #E9E9E9;
+    position: relative;
+    display: inline;
+    float: right;
+  }
+
+.small {
+height: 1em;
+top: 1.5em;
+}
+
+.big {
+height: 2.5em;
+top: 0.75em;
+padding: 0 0.25em;
+}

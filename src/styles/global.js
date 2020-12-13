@@ -42,4 +42,13 @@ export default createGlobalStyle`
         /* Font black */
         color: #303131;
     }
+    
+    ul {
+        list-style-type: none;
+    }
+
+    section{
+        padding-left: 4em;
+        padding-right: 4em;
+    }
 `;
