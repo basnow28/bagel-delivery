@@ -14,3 +14,12 @@
     height: inherit;
     color: #303131;
 }
+
+@media (max-width:1250px) {
+    .Logo{
+        display: block;
+        position: fixed;
+        top: 0;
+        background-color:  #FFFFFF;
+    }
+}

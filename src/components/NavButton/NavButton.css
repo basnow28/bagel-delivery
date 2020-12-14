@@ -1,7 +1,7 @@
 .NavButton {
     display: inline;
     position: relative;
-    float: right;
+    float: left;
     border:none;
     height: 4em;
     width: fit-content;
@@ -17,4 +17,17 @@
 .Language{
     padding-left: 0.25em; 
     padding-right: 0.25em; 
+}
+
+@media (max-width:1250px) {
+    .NavButton {
+        float:none;
+        width: 100%;
+        display: block;
+        text-decoration: none;
+    }
+
+    .NavButton a{
+        text-decoration: none;
+    }
 }
