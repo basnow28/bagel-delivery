@@ -1,0 +1,181 @@
+
+.videoContainer{
+    position: absolute;
+    overflow: hidden;
+    height: 628px;
+    top:80px;
+    left:20px;
+    right: 20px;
+}
+
+
+.video{
+    position: absolute;
+    playing: true;
+    top:80px;
+    left:20px;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: local("Work Sans"), url(./Work_Sans/static/WorkSans-Regular.ttf) format("truetype");
+}
+/* Bæredygtig levering med ladcykel – hver dag */
+.textOverlayOnVideo{
+    position: absolute;
+    width: 769px;
+    height: 150px;
+    left: 74px;
+    top: 350px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+
+    color: #FFFFFF;
+}
+
+.textContainer{
+    position: absolute;
+    left:20px;
+}
+/* Det kan være svært at regne på klimatiltag, og derfor har vi gjort det en smule lettere. */
+.introText{
+    position: absolute;
+    width: 641px;
+    height: 165px;
+    left: 74px;
+    top: 784px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 150%;
+    /* or 54px */
+
+    /* Font black */
+    color: #303131;
+}
+
+.imageContainer{
+    /*position: absolute;*/
+    right:20px;
+}
+/* Logo illustration */
+.deliveryImage {
+    /*position: absolute;*/
+    width: 304px;
+    height: 205px;
+    right: 74px;
+    top: 784px;
+
+    background: url(./images/ODelivery.jpg);
+    z-index: 2;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+}
+
+
+/* Top Border */
+.topBorder{
+    position: absolute;
+    width: 1440px;
+    height: 0px;
+    left: 0px;
+    top: 2090px;
+
+    /* Line (faded) */
+    border: 1px solid #E9E9E9;
+    transform: rotate(0.04deg);
+}
+
+
+
+
+
+.whoWeWorkWithContainer{
+    /*position: absolute;*/
+    width: 1440px;
+    height: 813px;
+    top: 2090px;
+}
+/* Who we work with*/
+.whoWeWorkWithTitle {
+    position: absolute;
+    width: 146px;
+    height: 19px;
+    left: 74px;
+    top: 2138px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Font black */
+
+    color: #303131;
+}
+
+
+/* Et grønt fællesskab */
+.whoWeWorkWithSubHeading {
+    position: absolute;
+    width: 481px;
+    height: 59px;
+    left: 71px;
+    top: 2157px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 59px;
+    /* identical to box height */
+
+
+    /* Font black */
+
+    color: #303131;
+}
+
+
+/* Vi arbejder text */
+.whoWeWorkWithText {
+    position: absolute;
+    width: 612px;
+    height: 155px;
+    left: 74px;
+    top: 2242px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+    color: #000000;
+}
+
+.clientsContainer{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: 150px 150px;
+    left: 74px;
+    top: 2242px;
+}
+.grid-item {
+    padding: 90px;
+    left: 74px;
+    top: 2242px;
+}
+
+

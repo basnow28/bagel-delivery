@@ -14,6 +14,9 @@ import ContactForm from '../../components/ContactForm'
 import Footer from './../Footer';
 import Text from '../WhatWeDo/Text';
 import SlideCarousel from './../WhatWeDo/ImageCarousel/SlideCarousel.js';
+import App from "../../App";
+import ReactDOM from 'react-dom';
+
 
 const Dashboard = props => {
     useEffect(() => {
@@ -21,6 +24,7 @@ const Dashboard = props => {
     }, [])
 
     console.log(props.content)
+
     return (
         <div className="dashboard-container">
             <h1>This is a dashboard!</h1>
@@ -38,4 +42,6 @@ const Dashboard = props => {
     )
 }
 
+
 export default connect(selectors, actions)(Dashboard);
+
