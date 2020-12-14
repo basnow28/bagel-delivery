@@ -13,7 +13,6 @@ import ContactForm from '../../components/ContactForm'
 
 import Footer from './../Footer/Footer.js';
 import Text from '../WhatWeDo/Text/Text.js';
-import Carousel from './../WhatWeDo/ImageCarousel/DemoCarousel.js';
 import Slider from './../WhatWeDo/ImageCarousel/slide.js'
 import SlideCarousel from './../WhatWeDo/ImageCarousel/SlideCarousel.js';
 
