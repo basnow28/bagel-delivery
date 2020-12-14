@@ -1,0 +1,40 @@
+/*header*/
+.textHeader{
+    position: absolute;
+    width: 293px;
+    height: 59px;
+    left: 574px;
+    top: 1156px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 59px;
+
+    /* identical to box height */
+    text-align: center;
+
+    /* Font black */
+    color: #303131;
+}
+
+.textBody {
+    position: absolute;
+    width: 821px;
+    height: 183px;
+    left: 310px;
+    top: 1241px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+
+    /* or 27px */
+    text-align: center;
+
+    color: #000000;
+    
+}

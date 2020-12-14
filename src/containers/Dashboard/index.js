@@ -12,7 +12,7 @@ import ContactForm from '../../components/ContactForm'
 
 
 import Footer from './../Footer/Footer.js';
-import Text from './../WhatWeDo/Text.js';
+import Text from '../WhatWeDo/Text/Text.js';
 import Carousel from './../WhatWeDo/ImageCarousel/DemoCarousel.js';
 import Slider from './../WhatWeDo/ImageCarousel/slide.js'
 import SlideCarousel from './../WhatWeDo/ImageCarousel/SlideCarousel.js';
@@ -30,7 +30,7 @@ const Dashboard = props => {
             <DummyComponent name="Who we work with"></DummyComponent>
             <Footprint />
             <ContactForm name="Contact"></ContactForm>
-                <Footer logo='onward delivery' contact={{ number: '+45 5022 2266', email: 'hello@onward.dk' }}
+            <Footer logo='onward delivery' contact={{ number: '+45 5022 2266', email: 'hello@onward.dk' }}
                     social={[{ name: 'Instagram', link: '' }, { name: 'Facebook', link: '' }]} />
         </div>
 

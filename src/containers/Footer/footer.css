@@ -1,0 +1,75 @@
+ /*Footer*/
+ footer {
+    position: absolute;
+    width: 100%; /* 1441px; */
+    height: 261px;;
+    left: -1px;
+    top: 5164px;
+    background: #303131;
+}
+
+.logoFooter {
+    position: absolute;
+    width: 244px;
+    height: 35px;
+    left: 69px;
+    top: 80px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.logoFooter a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.contactFooter a {
+    text-decoration: none;
+    color: #C4C4C4;
+}
+
+.socialFooter a {
+    text-decoration: none;
+    color: #C4C4C4;
+}
+
+.contactFooter{
+    position: absolute;
+    width: 113px;
+    height: 84px;
+    left: 897px;
+    top: 78px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 200%;
+
+    /* or 28px */
+
+    color: #C4C4C4;
+}
+
+.socialFooter {
+    position: absolute;
+    width: 66px;
+    height: 84px;
+    left: 1259px;
+    top: 78px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 200%;
+
+    /* or 28px */
+
+    color: #C4C4C4;
+}
