@@ -5,7 +5,7 @@ import './footer.css';
 class Footer extends React.Component{
     render(){
         return (
-            <footer>
+            
                 <div className='footer-container'>
                     <div className='logoFooter'>
                         <a href='#'>{this.props.logo}</a>
@@ -25,7 +25,7 @@ class Footer extends React.Component{
                         </div>
                     </div>
                 </div>
-            </footer>
+            
         )
     }
 }
