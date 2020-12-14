@@ -3,7 +3,6 @@
     font-family: 'Work Sans';
     font-style: normal;
     text-align: left;
-    width: 100%;
     line-height: 2em;
     /* Font black */
     height: auto;
@@ -31,6 +30,7 @@
 .Left p{
     font-weight: 300;
     line-height: 1.3em;
+    text-align: left;
 }
 
 .Right{
@@ -51,6 +51,8 @@ input[type="submit"]{
     line-height: 3em;
     text-align: center;
     transition:none;
+    width: 100%;
+    margin: 2em 0em;
 }
 
 .contact-input, textarea, select{
@@ -113,4 +115,13 @@ option{
 
 .contact-input[type="submit"]:focus{
     outline: none;
+}
+
+@media (max-width:900px) {
+    .Input-Left, .Input-Right, .Contact .Right, .Contact .Left {
+        width: 98%;
+        float: none;
+    }
+
+
 }
