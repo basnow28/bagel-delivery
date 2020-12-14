@@ -5,11 +5,12 @@ import './text.css';
 class Text extends React.Component{
     render() {
         return (
-            <div> 
+            <div className='text-container'> 
                 <header className='textHeader'>{this.props.header}</header>
                 <div className='textBody'>
                     <p className='noMarginAndPadding'>{this.props.textBody}</p>
-                    <br></br>
+                </div>
+                <div className='textBody'>
                     <p className='noMarginAndPadding'>{this.props.textBody2}</p>
                 </div>
             </div>

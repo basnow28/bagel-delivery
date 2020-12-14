@@ -1,11 +1,15 @@
 /*header*/
-.textHeader{
-    position: absolute;
-    width: 293px;
-    height: 59px;
-    left: 574px;
-    top: 1156px;
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50vw;
+    align-self: center;
+}
 
+.textHeader{
+    display: flex;
     font-family: Work Sans;
     font-style: normal;
     font-weight: 600;
@@ -13,6 +17,7 @@
     line-height: 59px;
 
     /* identical to box height */
+    justify-content: center;
     text-align: center;
 
     /* Font black */
@@ -20,11 +25,8 @@
 }
 
 .textBody {
-    position: absolute;
-    width: 821px;
-    height: 183px;
-    left: 310px;
-    top: 1241px;
+    display: flex;
+    justify-content: center;
 
     font-family: Work Sans;
     font-style: normal;
@@ -37,4 +39,39 @@
 
     color: #000000;
     
+}
+@media (max-width:600px) {
+    .text-container{
+        width: 90vw;
+    }
+}
+
+@media (min-width: 600px) {
+    .text-container{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 800px) {
+    .text-container{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .text-container {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-container {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    .text-container {
+        width: 50vw;
+    }
 }
