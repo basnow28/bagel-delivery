@@ -1,8 +1,38 @@
 import React, { Component } from 'react';
+import TextField from '../TextField';
 import './Contact.css';
 
-const ContactForm = () => {
+class ContactForm extends React.Component {
     
+    constructor(props){
+        super(props);
+
+        this.handleChange = this.handleChange.bind(this);
+
+        this.state = {
+            subject : "say-hi",
+            company : "",
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            message: "",
+            frequency: "dont-know",
+        }
+    }
+
+    handleChange(event) {
+        console.log(event.target.value);
+        const target = event.target;
+        const value = target.value;
+        const name = target.name;
+    
+        this.setState({
+          [name]: value
+        });
+    }
+
+    render(){
     return(
         <section id="Contact" className="Contact">
             <div className="Contact Left">
@@ -15,41 +45,26 @@ const ContactForm = () => {
                 <form>
                     <field className="Input-Left">
                         <label>Subject</label>
-                        <select>
+                        <select value={this.state.subject} name="subject" onChange={this.handleChange}>
                             <option value="say-hi">Say hi</option>
-                            <option value="o1">Option2</option>
-                            <option value="o2">Option3</option>
-                            <option value="o3">Option4</option>
+                            <option value="o2">Option2</option>
+                            <option value="o3">Option3</option>
+                            <option value="o4">Option4</option>
                         </select>
                     </field>
-                    <field className="Input-Right">
-                        <label>Company</label>
-                        <input className='contact-input' type="text"/>
-                    </field>
-                    <field className="Input-Left">
-                        <label>First name*</label>
-                        <input className='contact-input' type="text" required/>
-                    </field>
-                    <field className="Input-Right">
-                        <label>Last name</label>
-                        <input className='contact-input' type="text"/>
-                    </field>
-                    <field className="Input-Left">
-                        <label>Email*</label>
-                        <input  className='contact-input' type="email" required/>
-                    </field>
-                    <field className="Input-Right">
-                        <label>Phone</label>
-                        <input className='contact-input'/>
-                    </field>
+                    <TextField fieldClass="Input-Right" label="Company" className='contact-input' name="company" type="text" value={this.state.company}  onChange={this.handleChange} />
+                    <TextField fieldClass="Input-Left" label="First Name*" className='contact-input'name="firstName" type="text" value={this.state.firstName}  required onChange={this.handleChange} />
+                    <TextField fieldClass="Input-Right" label="Last Name" className='contact-input' name="lastName" type="text" value={this.state.lastName}  onChange={this.handleChange} />
+                    <TextField fieldClass="Input-Left" label="Email*"className='contact-input' name="email" type="email" required  value={this.state.email} onChange={this.handleChange}/>
+                    <TextField fieldClass="Input-Right" label="Phone" className='contact-input' name="phone" value={this.state.phone} onChange={this.handleChange}/>
                     <field>
                         <label>Your message</label><br/>
-                        <textarea type="text" rows="5" cols="92" className="Message"/><br/>
+                        <textarea type="text" rows="5" cols="92" name="message" className="Message" value={this.state.message} onChange={this.handleChange}/><br/>
                     </field>
                     <field>
                         <label>How often do you need deliveries?</label><br/>
-                        <select className="Frequency">
-                            <option value="dont-know">Don't know yet</option>
+                        <select className="Frequency"  name="frequency" value={this.state.frequency} onChange={this.handleChange}>
+                            <option value="dont-know" >Don't know yet</option>
                             <option value="2-3">2-3 times per week </option>
                             <option value="4-5">4-5 times per week </option>
                             <option value="6-7">6-7 times per week </option>
@@ -60,7 +75,7 @@ const ContactForm = () => {
             </div>
         </section>
     )
-
+    }
 }
 
 export default ContactForm
