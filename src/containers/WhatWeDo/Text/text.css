@@ -1,0 +1,77 @@
+/*header*/
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50vw;
+    align-self: center;
+}
+
+.textHeader{
+    display: flex;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 59px;
+
+    /* identical to box height */
+    justify-content: center;
+    text-align: center;
+
+    /* Font black */
+    color: #303131;
+}
+
+.textBody {
+    display: flex;
+    justify-content: center;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+
+    /* or 27px */
+    text-align: center;
+
+    color: #000000;
+    
+}
+@media (max-width:600px) {
+    .text-container{
+        width: 90vw;
+    }
+}
+
+@media (min-width: 600px) {
+    .text-container{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 800px) {
+    .text-container{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .text-container {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-container {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    .text-container {
+        width: 50vw;
+    }
+}

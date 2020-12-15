@@ -1,0 +1,417 @@
+ /*Footer*/
+ .footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 261px;
+    background: #303131;
+ }
+ 
+
+.logoFooter {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-left: 69px;
+    margin-top: 80px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.logoFooter a {
+    text-decoration: none;
+    color: #C4C4C4;
+}
+
+
+.contact-social-footer{
+    display:flex;
+    flex-direction: row;
+    width: 50vw;
+}
+
+.contactFooter{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin-top: 78px;
+    margin-left: 127.75px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 200%;
+    color: #C4C4C4;
+}
+
+.contactFooter a {
+    text-decoration: none;
+    color: #C4C4C4;
+    
+}
+
+.socialFooter {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin-left: 211.5px;
+    margin-top: 78px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 200%;
+
+    color: #C4C4C4;
+}
+
+.socialFooter a {
+    text-decoration: none;
+    color: #C4C4C4;
+}
+
+@media (max-width:600px) {    
+    .footer-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .logoFooter{
+        width: 100vw;
+        margin-left: 0;
+
+    }
+    .logoFooter a {
+        text-align: center;
+    }
+    .contact-social-footer{
+        width: 100vw;
+        flex-direction: column;    
+    }
+    .contactFooter{
+        width: 100vw;
+        margin-left: 0;
+
+    }
+    .contactFooter a, header {
+        text-align: center;
+    }
+    .socialFooter{
+        width: 100vw;
+        margin-left: 0;
+        margin-bottom: 78px ;
+    }
+    .socialFooter a, header {
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) {
+    .footer-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .logoFooter{
+        width: 100vw;
+        margin-left: 0;
+
+    }
+    .logoFooter a {
+        text-align: center;
+    }
+    .contact-social-footer{
+        width: 100vw;
+        flex-direction: row;    
+    }
+    .contactFooter{
+        width: 50vw;
+        margin-left: 0;
+
+    }
+    .contactFooter a, header {
+        text-align: center;
+    }
+    .socialFooter{
+        width: 50vw;
+        margin-left: 0;
+        margin-bottom: 78px ;
+    }
+    .socialFooter a, header {
+        text-align: center;
+    }
+}
+
+@media (min-width: 800px) {
+    .footer-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .logoFooter{
+        width: 100vw;
+        margin-left: 0;
+
+    }
+    .logoFooter a {
+        text-align: center;
+    }
+    .contact-social-footer{
+        width: 100vw;
+        flex-direction: row;    
+    }
+    .contactFooter{
+        width: 50vw;
+        margin-left: 0;
+
+    }
+    .contactFooter a, header {
+        text-align: center;
+    }
+    .socialFooter{
+        width: 50vw;
+        margin-left: 0;
+        margin-bottom: 78px ;
+    }
+    .socialFooter a, header {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1000px){
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100vw;
+        height: 261px;
+        background: #303131;
+     }
+     
+    
+    .logoFooter {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 69px;
+        margin-top: 80px;
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        
+    }
+    
+    .logoFooter a {
+        text-decoration: none;
+        color: #C4C4C4;
+        text-align: start;
+    }
+    
+    
+    .contact-social-footer{
+        display:flex;
+        flex-direction: row;
+        width: 50vw;
+    }
+    
+    .contactFooter{
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        margin-top: 78px;
+        margin-left: 43px;
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 200%;
+        color: #C4C4C4;
+    }
+    
+    .contactFooter a {
+        text-decoration: none;
+        color: #C4C4C4;
+        
+    }
+    
+    .socialFooter {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        margin-left: 211.5px;
+        margin-top: 78px;
+    
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 200%;
+    
+        color: #C4C4C4;
+    }
+    
+    .socialFooter a {
+        text-decoration: none;
+        color: #C4C4C4;
+    }
+}
+
+@media (min-width: 1200px){
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100vw;
+        height: 261px;
+        background: #303131;
+     }
+     
+    
+    .logoFooter {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 69px;
+        margin-top: 80px;
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        
+    }
+    
+    .logoFooter a {
+        text-decoration: none;
+        color: #C4C4C4;
+        text-align: start;
+    }
+    
+    
+    .contact-social-footer{
+        display:flex;
+        flex-direction: row;
+        width: 50vw;
+    }
+    
+    .contactFooter{
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        margin-top: 78px;
+        margin-left: 85px;
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 200%;
+        color: #C4C4C4;
+    }
+    
+    .contactFooter a {
+        text-decoration: none;
+        color: #C4C4C4;
+        
+    }
+    
+    .socialFooter {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        margin-left: 211.5px;
+        margin-top: 78px;
+    
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 200%;
+    
+        color: #C4C4C4;
+    }
+    
+    .socialFooter a {
+        text-decoration: none;
+        color: #C4C4C4;
+    }
+}
+
+@media (min-width: 1400px){
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100vw;
+        height: 261px;
+        background: #303131;
+     }
+     
+    
+    .logoFooter {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 69px;
+        margin-top: 80px;
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        
+    }
+    
+    .logoFooter a {
+        text-decoration: none;
+        color: #C4C4C4;
+        text-align: start;
+    }
+    
+    
+    .contact-social-footer{
+        display:flex;
+        flex-direction: row;
+        width: 50vw;
+    }
+    
+    .contactFooter{
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        margin-top: 78px;
+        margin-left: 127.75px;
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 200%;
+        color: #C4C4C4;
+    }
+    
+    .contactFooter a {
+        text-decoration: none;
+        color: #C4C4C4;
+        
+    }
+    
+    .socialFooter {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        margin-left: 211.5px;
+        margin-top: 78px;
+    
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 200%;
+    
+        color: #C4C4C4;
+    }
+    
+    .socialFooter a {
+        text-decoration: none;
+        color: #C4C4C4;
+    }
+}

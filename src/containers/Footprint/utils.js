@@ -33,7 +33,7 @@ export const calculateCarbonEmmission = distance => {
         method: 'post',
         data: payload,
         headers: {
-            'Access-Control-Allow-Origin':'*'
+            'Access-Control-Allow-Origin':'https://onward-delivery.herokuapp.com/'
         }
     })
 }

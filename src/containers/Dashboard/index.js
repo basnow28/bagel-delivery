@@ -11,10 +11,8 @@ import DummyComponent from '../../components/DummyComponent'
 import ContactForm from '../../components/ContactForm'
 
 
-import Footer from './../Footer/Footer.js';
-import Text from './../WhatWeDo/Text.js';
-import Carousel from './../WhatWeDo/ImageCarousel/DemoCarousel.js';
-import Slider from './../WhatWeDo/ImageCarousel/slide.js'
+import Footer from './../Footer';
+import Text from '../WhatWeDo/Text';
 import SlideCarousel from './../WhatWeDo/ImageCarousel/SlideCarousel.js';
 
 const Dashboard = props => {
@@ -26,11 +24,14 @@ const Dashboard = props => {
     return (
         <div className="dashboard-container">
             <h1>This is a dashboard!</h1>
-            <DummyComponent name="What we do"></DummyComponent>
+            <Text 
+                header='Et lille valg - en stor forskel' 
+                textBody='København er en lille storby, og selvom vi er mere end en million indbyggere, så er afstanden fra yderpunkterne mindre end 10 kilometer. Dét, kombineret med byens fantastiske infrastruktur, gør cyklen til det mest oplagte transportmiddel – også når det kommer til levering af mindre varer.'
+            textBody2 ='Onward Delivery er skabt ud fra drømmen om, at det skal være lettere for caféer og restauranter, der dagligt har brug for friske specialvarer, at vælge bæredygtig levering. Siden vi cyklede vores første rute, er det blevet til godt 41.000 km i alt – det svarer til en tur rundt om jorden. Og lidt til.'/>
             <DummyComponent name="Who we work with"></DummyComponent>
             <Footprint />
             <ContactForm name="Contact"></ContactForm>
-                <Footer logo='onward delivery' contact={{ number: '+45 5022 2266', email: 'hello@onward.dk' }}
+            <Footer logo='onward delivery' contact={{ number: '+45 5022 2266', email: 'hello@onward.dk' }}
                     social={[{ name: 'Instagram', link: '' }, { name: 'Facebook', link: '' }]} />
         </div>
 
