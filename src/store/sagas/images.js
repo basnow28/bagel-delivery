@@ -7,8 +7,7 @@ import request from "./helpers/request";
 
 function* init(action){
     const lang = yield select(selectLanguage)
-    console.log('haha')
-    console.log(yield call(request, {type: IMAGES.FETCH, rootAction: action}, () => fetchImages(lang)))
+    yield call(request, {type: IMAGES.FETCH, rootAction: action}, () => fetchImages(lang))
 }
 
 export default function*(){

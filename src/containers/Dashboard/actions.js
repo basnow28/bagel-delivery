@@ -1,13 +1,14 @@
-import { LOCALE,IMAGES } from "../../store/actions/action";
+import { CONTENT, LANGUAGE } from "../../store/actions/action";
 
 export const onInit = () => {
     return {
-        type: LOCALE.INIT
+        type: CONTENT.INIT
     }
 }
 
-export const loadImages = () => {
+export const setLanguage = language => {
     return {
-        type: IMAGES.INIT
+        type: LANGUAGE.CHANGE,
+        language: language
     }
 }

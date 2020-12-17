@@ -4,6 +4,9 @@ import Hamburger from "../../components/Hamburger"
 import Logo from "../../components/Logo"
 import { HashLink as Link } from 'react-router-hash-link';
 import './Navbar.css';
+import { connect } from "react-redux";
+import selectors from './selectors'
+import * as actions from './actions'
 
 class Navbar extends React.Component {
 
@@ -14,8 +17,7 @@ class Navbar extends React.Component {
         this.clickHamburger = this.clickHamburger.bind(this);
 
         this.state = {
-            menuItems : ["What we do","Who we work with","Contact"],
-            selectedLang : "DA",
+            menuItems : ["What we do","Who we work with", "Contact"],
             hamburgerOpen: true,
 
         }
@@ -23,15 +25,15 @@ class Navbar extends React.Component {
 
     clickHamburger(){
         this.setState({hamburgerOpen: !this.state.hamburgerOpen});
-        console.log("clicked:" + this.state.hamburgerOpen);
-        console.log("width:" + document.body.clientWidth);
     }
 
     selectLanguage(language){
-        this.setState({selectedLang: language});
+        this.props.setLanguage(language)
     }
 
     render(){
+        const { lang } = this.props.lang;
+
         return (
             <>
             <div className="Navbar">
@@ -48,13 +50,13 @@ class Navbar extends React.Component {
                     <div className="vl big"></div>
                     <li className="NavButton Language">
                         <Link to={'/dk'}>
-                            <NavButton name="DA" className={`Language ${this.state.selectedLang === "DA" ? ("bold") : ("")}`}  onClick={() => this.selectLanguage("DA")}/>
+                            <NavButton name="DA" className={`Language ${lang === "da-dk" ? ("bold") : ("")}`}  onClick={() => this.selectLanguage("da-dk")}/>
                         </Link>
                     </li>
                     <div className="vl small"></div>
                     <li className="NavButton Language">
                         <Link to={'/en'}>
-                        <NavButton name="EN" className={`Language ${this.state.selectedLang === "EN" ? ("bold") : ("")}`}  onClick={() => this.selectLanguage("EN")}/>
+                        <NavButton name="EN" className={`Language ${lang === "en-gb" ? ("bold") : ("")}`}  onClick={() => this.selectLanguage("en-gb")}/>
                         </Link>
                     </li>
    
@@ -64,4 +66,4 @@ class Navbar extends React.Component {
         );
     }
 }
-export default Navbar
+export default connect(selectors, actions)(Navbar)

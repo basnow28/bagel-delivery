@@ -4,7 +4,6 @@ import * as _ from 'lodash'
 export const selectLocale = state => state.locale;
 
 export const selectLocaleText = (title, key) => createSelector(selectLocale, locales => {
-    console.log(locales)
     const results = _.get(locales, 'results.0.data.body') //if sth is null or undefined then it returns undefined
     const section = _.filter(results, result => _.get(result, 'primary.title.0.text') == title);
     const text = _.filter(_.get(section, '0.items'), item => _.get(item, 'key.0.text') == key);

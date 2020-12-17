@@ -11,3 +11,7 @@ export const IMAGES = {
     INIT: 'IMAGES.INIT',
     FETCH: 'IMAGES.FETCH'
 }
+
+export const CONTENT = {
+    INIT: 'CONTENT.INIT'
+}
