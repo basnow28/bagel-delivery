@@ -7,7 +7,8 @@ import { selectLanguage } from '../selectors/lang'
 
 function* init(action){
     const lang = yield select(selectLanguage)
-    yield call(request, {type: LOCALE.FETCH, rootAction: action}, () => fetchLocaleText(lang))
+    const response = yield call(request, {type: LOCALE.FETCH, rootAction: action}, () => fetchLocaleText(lang))
+    console.log(response)
 }
 
 export default function*(){

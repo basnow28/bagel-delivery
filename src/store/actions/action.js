@@ -4,7 +4,7 @@ export const LOCALE = {
 }
 
 export const LANGUAGE = {
-    'CHANGE': 'LANGUAGE.CHANGE'
+    CHANGE: 'LANGUAGE.CHANGE'
 }
 
 export const IMAGES = {
