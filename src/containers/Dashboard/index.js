@@ -33,8 +33,7 @@ const Dashboard = props => {
             <DummyComponent name="Who we work with"></DummyComponent>
             <Footprint />
             <ContactForm name="Contact"></ContactForm>
-            <Footer logo='onward delivery' contact={{ number: '+45 5022 2266', email: 'hello@onward.dk' }}
-                social={[{ name: 'Instagram', link: '' }, { name: 'Facebook', link: '' }]} />
+            <Footer />
         </div>
 
     )
