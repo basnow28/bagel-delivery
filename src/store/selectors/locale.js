@@ -12,12 +12,11 @@ export const selectLocaleText = (title, key) => createSelector(selectLocale, loc
 
 
 export const selectFooterLocaleText = (title, key) => createSelector(selectLocale, locales => {
-    console.log(locales);
-    /*const results = _.get(locales, 'results.0.data.body') 
+    const results = _.get(locales, 'results.0.data.body.2') 
     const section = _.filter(results, result => _.get(result, 'primary.title.0.text') == title);
     const text = _.filter(_.get(section, '0.items'), item => _.get(item, 'key.0.text') == key);
     return _.get(text, '0.value.0.text');
-    */
+    
 })
 
 
