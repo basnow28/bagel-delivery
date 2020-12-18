@@ -1,27 +1,29 @@
 import { extend } from 'lodash';
+import selectors from './selectors'
+import * as actions from './actions'
+import { connect } from 'react-redux'
 import React from 'react';
 import './footer.css';
 
 class Footer extends React.Component{
     render(){
+        const { tags } = this.props;
         return (
             
                 <div className='footer-container'>
                     <div className='logoFooter'>
-                        <a href='#'>{this.props.logo}</a>
+                        <a href='#'>{tags.logo}</a>
                     </div>
                     <div className='contact-social-footer'>
                         <div className='contactFooter'>
-                            <header>Contact</header>
-                            <a href='#' >{this.props.contact.number}</a>
-                            <a href='#' >{this.props.contact.email}</a>
+                            <header>{tags.subtitle1}</header>
+                            <a href='#' >{tags.phone}</a>
+                            <a href='#' >{tags.email}</a>
                         </div>
                         <div className='socialFooter'>
-                            <header>Social</header>
-                            {this.props.social.map(s => 
-                            <a key = {s.name} href={s.link} >{s.name}<br/></a>
-                                )
-                            }   
+                            <header>{tags.subtitle1}</header>
+                            <a href={tags.facebook} >{tags.social1}</a>
+                            <a href={tags.instagram} >{tags.social2}</a> 
                         </div>
                     </div>
                 </div>
@@ -30,4 +32,4 @@ class Footer extends React.Component{
     }
 }
 
-export default Footer;
+export default connect(selectors, actions)(Footer);
