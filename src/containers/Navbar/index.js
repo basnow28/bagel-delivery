@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import NavButton from "../../components/NavButton"
 import Hamburger from "../../components/Hamburger"
 import Logo from "../../components/Logo"
@@ -7,6 +7,7 @@ import './Navbar.css';
 import { connect } from "react-redux";
 import selectors from './selectors'
 import * as actions from './actions'
+import { NavLink } from 'react-router-dom'
 
 class Navbar extends React.Component {
 
@@ -35,7 +36,6 @@ class Navbar extends React.Component {
         const { lang } = this.props.lang;
 
         return (
-            <>
             <div className="Navbar">
                 <Logo/>
                 <Hamburger className = "NavButton Hamburger" onClick={() => this.clickHamburger()}/>
@@ -49,20 +49,19 @@ class Navbar extends React.Component {
                     ))}
                     <div className="vl big"></div>
                     <li className="NavButton Language">
-                        <Link to={'/dk'}>
+                        <NavLink to={'/dk'}>
                             <NavButton name="DA" className={`Language ${lang === "da-dk" ? ("bold") : ("")}`}  onClick={() => this.selectLanguage("da-dk")}/>
-                        </Link>
+                        </NavLink>
                     </li>
                     <div className="vl small"></div>
                     <li className="NavButton Language">
-                        <Link to={'/en'}>
+                        <NavLink to={'/en'}>
                         <NavButton name="EN" className={`Language ${lang === "en-gb" ? ("bold") : ("")}`}  onClick={() => this.selectLanguage("en-gb")}/>
-                        </Link>
+                        </NavLink>
                     </li>
    
                 </ul>
             </div>
-            </>
         );
     }
 }

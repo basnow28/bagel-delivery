@@ -1,7 +1,7 @@
 import React from 'react'
 import { Redirect, Switch } from 'react-router-dom'
 import Route from './Route'
-import Dashboard from '../containers/Dashboard'
+import Dashboard from '../containers/Dashboard/index'
 import Navbar from '../containers/Navbar'
 
 /*
@@ -13,8 +13,8 @@ export default function Routes(){
         <>
         <Navbar/>
         <Switch>
-            <Route path='/en' component={() => <Dashboard lang='en-gb'/>} exact/>
-            <Route path='/dk' component={() => <Dashboard lang='da-dk'/>} exact/>
+            <Route path='/en' component={Dashboard} exact/>
+            <Route path='/dk' component={Dashboard} exact/>
             <Redirect from='/' to='/dk'/>
         </Switch>
         </>
