@@ -51,7 +51,7 @@ export default createGlobalStyle`
         padding: 6em 5em;
     }
 
-    button:active {
+    button {
         outline: none;
         border: none;
     }
