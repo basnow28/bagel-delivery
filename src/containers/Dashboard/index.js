@@ -30,8 +30,11 @@ const Dashboard = props => {
                 header='Et lille valg - en stor forskel'
                 textBody='København er en lille storby, og selvom vi er mere end en million indbyggere, så er afstanden fra yderpunkterne mindre end 10 kilometer. Dét, kombineret med byens fantastiske infrastruktur, gør cyklen til det mest oplagte transportmiddel – også når det kommer til levering af mindre varer.'
                 textBody2='Onward Delivery er skabt ud fra drømmen om, at det skal være lettere for caféer og restauranter, der dagligt har brug for friske specialvarer, at vælge bæredygtig levering. Siden vi cyklede vores første rute, er det blevet til godt 41.000 km i alt – det svarer til en tur rundt om jorden. Og lidt til.' />
+            <hr/>
             <DummyComponent name="Who we work with"></DummyComponent>
+            <hr/>
             <Footprint />
+            <hr/>
             <ContactForm name="Contact"></ContactForm>
             <Footer />
         </div>

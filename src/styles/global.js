@@ -48,7 +48,6 @@ export default createGlobalStyle`
     }
 
     section{
-        padding-left: 4em;
-        padding-right: 4em;
+        padding: 6em 5em;
     }
 `;

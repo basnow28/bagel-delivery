@@ -117,11 +117,16 @@ option{
     outline: none;
 }
 
-@media (max-width:900px) {
+@media (max-width:1024px) {
+    .Contact .Right, .Contact .Left {
+        width: 98%;
+        float: none;
+    }
+}
+
+@media (max-width:500px) {
     .Input-Left, .Input-Right, .Contact .Right, .Contact .Left {
         width: 98%;
         float: none;
     }
-
-
 }

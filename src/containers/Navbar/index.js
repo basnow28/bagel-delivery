@@ -16,6 +16,7 @@ class Navbar extends React.Component {
 
         this.selectLanguage = this.selectLanguage.bind(this);
         this.clickHamburger = this.clickHamburger.bind(this);
+        this.closeHamburger = this.closeHamburger.bind(this);
 
         this.state = {
             menuItems : ["What we do","Who we work with", "Contact"],
@@ -26,6 +27,10 @@ class Navbar extends React.Component {
 
     clickHamburger(){
         this.setState({hamburgerOpen: !this.state.hamburgerOpen});
+    }
+
+    closeHamburger(){
+        this.setState({hamburgerOpen: false});
     }
 
     selectLanguage(language){
@@ -43,7 +48,7 @@ class Navbar extends React.Component {
                     {this.state.menuItems.map((menuItem) => (
                         <li className="NavButton">
                             <Link smooth to={`#${menuItem}`}>
-                                <NavButton name={menuItem}/>
+                                <NavButton name={menuItem} onClick={() => this.closeHamburger()}/>
                             </Link>
                         </li>
                     ))}

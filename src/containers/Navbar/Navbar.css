@@ -69,8 +69,10 @@ padding: 0 0.25em;
 
 .Hamburger{
     float:left;
-    width: 4em;
+    width: 15%;
+    height: auto;
     display: none;
+    padding: 0.620em;
 }
 
 .off{
@@ -92,6 +94,7 @@ padding: 0 0.25em;
             display: block;
             position: fixed;
             top: 4em;
+            border-bottom: 1px #9c9c9c solid;
         }
 
         .Navbar{

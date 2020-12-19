@@ -5,7 +5,7 @@ import './text.css';
 class Text extends React.Component{
     render() {
         return (
-            <div className='text-container'> 
+            <section className='text-container'> 
                 <header className='textHeader'>{this.props.header}</header>
                 <div className='textBody'>
                     <p className='noMarginAndPadding'>{this.props.textBody}</p>
@@ -13,7 +13,7 @@ class Text extends React.Component{
                 <div className='textBody'>
                     <p className='noMarginAndPadding'>{this.props.textBody2}</p>
                 </div>
-            </div>
+            </section>
     )}
 }
 

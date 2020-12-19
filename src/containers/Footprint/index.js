@@ -56,7 +56,7 @@ class Footprint extends Component {
     render() {
         const { tags, topPicture } = this.props;
         return (
-            <div className='footprint-container'>
+            <section className='footprint-container'>
                 <img className='footprint-image' src={topPicture} />
                 <h1>{tags.title}</h1>
                 <p>{tags.subtitle}</p>
@@ -88,7 +88,7 @@ class Footprint extends Component {
                     </button>
                 </div>
                 <p>{tags.savings}{this.state.co2}{tags.co2}</p>
-            </div>
+            </section>
         )
     }
 }

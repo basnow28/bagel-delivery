@@ -1,5 +1,5 @@
 import '../../containers/Navbar/Navbar.css';
-import HamburgerIcon from './Hamburger_icon.svg.png';
+import HamburgerIcon from './Hamburger_icon.png';
 
 const Hamburger = ({className, onClick}) => {
 

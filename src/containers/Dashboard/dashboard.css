@@ -4,4 +4,15 @@
     align-content: center;
     flex-direction: column;
     padding-top: 4vh;
+    position: absolute;
+    top: 4em;
+    z-index: -1;
+    width: 100%;
+}
+
+hr{
+    border-width:0;
+    height: 1px;
+    background-color: #E9E9E9;
+    width: 100%;
 }
