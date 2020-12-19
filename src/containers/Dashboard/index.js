@@ -8,7 +8,7 @@ import Footprint from '../Footprint'
 import './dashboard.css'
 import Navbar from '../Navbar'
 import DummyComponent from '../../components/DummyComponent'
-import ContactForm from '../../components/ContactForm'
+import ContactForm from '../ContactForm'
 
 
 import Footer from './../Footer';
