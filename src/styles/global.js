@@ -50,4 +50,9 @@ export default createGlobalStyle`
     section{
         padding: 6em 5em;
     }
+
+    button:active {
+        outline: none;
+        border: none;
+    }
 `;

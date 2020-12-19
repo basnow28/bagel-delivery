@@ -34,7 +34,8 @@ class Navbar extends React.Component {
     }
 
     selectLanguage(language){
-        this.props.setLanguage(language)
+        this.props.setLanguage(language);
+        this.closeHamburger();
     }
 
     render(){
