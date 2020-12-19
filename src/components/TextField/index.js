@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../ContactForm/Contact.css';
+import '../../containers/ContactForm/Contact.css';
 
 const TextField = props => {
 
